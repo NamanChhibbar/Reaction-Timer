@@ -5,30 +5,23 @@
 	<p v-if="result">Your reaction time: {{ result }}ms</p>
 </template>
 
-<script>
-import Block from "./components/Block.vue"
+<script setup>
+import { ref } from "vue";
+import Block from "./components/Block.vue";
 
-export default {
-	name: "App",
-	components: {Block},
-	data() {
-		return {
-			isPlaying: false,
-			delay: null,
-			result: null
-		}
-	},
-	methods: {
-		start() {
-			this.result = null;
-			this.delay = 2000 +  Math.random() * 4000
-			this.isPlaying = true;
-		},
-		end(reactionTime) {
-			this.isPlaying = false;
-			this.result = reactionTime;
-		}
-	}
+const isPlaying = ref(false);
+const delay = ref(null);
+const result = ref(null);
+
+function start() {
+	result.value = null;
+	delay.value = 2000 + Math.random() * 4000;
+	isPlaying.value = true;
+}
+
+function end(reactionTime) {
+	isPlaying.value = false;
+	result.value = reactionTime;
 }
 </script>
 
