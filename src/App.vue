@@ -2,12 +2,13 @@
 	<h1>Reaction Timer</h1>
 	<button :disabled="isPlaying" @click="start">Play</button>
 	<Block v-if="isPlaying" :delay="delay" @end="end" />
-	<p v-if="result">Your reaction time: {{ result }}ms</p>
+	<Result v-if="result" :result="result" />
 </template>
 
 <script setup>
 import { ref } from "vue";
 import Block from "./components/Block.vue";
+import Result from "./components/Result.vue";
 
 const isPlaying = ref(false);
 const delay = ref(null);

@@ -31,7 +31,7 @@ function stopTimer() {
         margin: 40px;
         border: 2px solid black;
         border-radius: 20px;
-        padding: 100px 0px;
+        padding: 100px;
         background: rgb(2, 250, 68);
         font-size: 30px;
     }
