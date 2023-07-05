@@ -1,4 +1,5 @@
-# reaction-timer
+# ReactionTimer
+A simple reaction timer project created using vue.js framework. A block appears in 2 - 6 seconds (selected randomly) after the user clicks "start" and the reaction time is shown in milliseconds.
 
 ## Project setup
 ```
