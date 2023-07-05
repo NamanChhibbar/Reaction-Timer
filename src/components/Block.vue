@@ -28,10 +28,10 @@ function stopTimer() {
 
 <style scoped>
     div {
-        margin: 40px;
+        margin: 40px 200px;
         border: 2px solid black;
         border-radius: 20px;
-        padding: 100px;
+        padding: 50px;
         background: rgb(2, 250, 68);
         font-size: 30px;
     }
