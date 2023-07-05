@@ -7,11 +7,11 @@ import { computed } from "vue";
 
 const props = defineProps(["result"]);
 const message = computed(() => {
-    if (props.result < 300) {
+    if (props.result < 250) {
         return "God level speed!";
-    } else if (props.result < 350) {
+    } else if (props.result < 300) {
         return "Quick reflexes!";
-    } else if (props.result < 400) {
+    } else if (props.result < 350) {
         return "Average";
     } else {
         return "Too slow";
